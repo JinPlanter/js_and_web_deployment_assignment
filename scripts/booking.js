@@ -29,7 +29,7 @@ function setAndResetSelectedElement(element) {
     thursdayButton.classList.remove("blue-hover-selected");
     fridayButton.classList.remove("blue-hover-selected");
 
-    element.classList.add("blue-hover-selected")
+    element.classList.add("blue-hover-selected");
 }
 
 /*
@@ -46,7 +46,7 @@ mondayButton.onclick = function(e) is an anonymous function
 */
 
 function onDayOfWeekButtonSelected(event) {
-    e.preventDefault();
+    event.preventDefault();
     console.log(event);
 
     // const target = event.target
@@ -54,7 +54,7 @@ function onDayOfWeekButtonSelected(event) {
     // called destructuring or extracting
     const { target } = event;
 
-    setAndResetSelectedElement(target)
+    setAndResetSelectedElement(target);
 }
 
 
@@ -91,7 +91,8 @@ halfButton.onclick = function(e) {
 
     costPerDay = 20;
     recalculate();
-}
+};
+
 // costPerDay
 // numDaysSelected
 
@@ -103,7 +104,7 @@ fullButton.onclick = function(e) {
 
     costPerDay = 35;
     recalculate();
-}
+};
 
 
 

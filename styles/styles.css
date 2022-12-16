@@ -207,7 +207,7 @@ body {
 
 
 .booking-page p {
-    size: 18px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
 }
